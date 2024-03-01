@@ -1,0 +1,89 @@
+{
+    "language": "en",
+    "plugins": [
+        {
+            "name": "@taqueria/plugin-smartpy",
+            "type": "npm"
+        },
+        {
+            "name": "@taqueria/plugin-taquito",
+            "type": "npm"
+        }
+    ],
+    "contractsDir": "contracts",
+    "testsDir": "tests",
+    "artifactsDir": "artifacts",
+    "environment": {
+        "default": "hangzhounet",
+        "development": {
+            "networks": [],
+            "sandboxes": [
+                "local"
+            ],
+            "storage": {}
+        },
+        "hangzhounet": {
+            "networks": [
+                "hangzhounet"
+            ],
+            "sandboxes": [],
+            "storage": {}
+        }
+    },
+    "sandbox": {
+        "local": {
+            "accounts": {
+                "default": "bob",
+                "bob": {
+                    "initialBalance": "3000000000"
+                },
+                "alice": {
+                    "initialBalance": "2000000000"
+                },
+                "john": {
+                    "initialBalance": "4000000000"
+                },
+                "jane": {
+                    "initialBalance": "5000000000"
+                },
+                "joe": {
+                    "initialBalance": "1000000000"
+                }
+            },
+            "label": "Local Tezos Sandbox",
+            "protocol": "PtHangz2aRngywmSRGGvrcTyMbbdpWdpFKuS4uMWxg2RaH9i1qx",
+            "rpcUrl": "http://localhost:20000"
+        }
+    },
+    "network": {
+        "hangzhounet": {
+            "label": "Hangzhounet",
+            "rpcUrl": "https://hangzhounet.smartpy.io",
+            "protocol": "PtHangz2aRngywmSRGGvrcTyMbbdpWdpFKuS4uMWxg2RaH9i1qx",
+            "faucet": {
+                "pkh": "tz1hmPbNNcaH91bkrYDeyAbUmYzjbPtJjPQR",
+                "mnemonic": [
+                    "laundry",
+                    "misery",
+                    "electric",
+                    "crunch",
+                    "normal",
+                    "dose",
+                    "crop",
+                    "enable",
+                    "analyst",
+                    "ocean",
+                    "possible",
+                    "diet",
+                    "angry",
+                    "annual",
+                    "turn"
+                ],
+                "email": "prrwcvof.wzvtxwvn@teztnets.xyz",
+                "password": "Z3r9xb3lMk",
+                "amount": "63400365950",
+                "activation_code": "85f3881de8e8bf0885b1e3c3d9411619b501e0c6"
+            }
+        }
+    }
+}
